@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
-//import AuthLinks from "../authLinks/AuthLinks";
-//import ThemeToggle from "../themeToggle/ThemeToggle";
+import AuthLinks from "../authLinks/AuthLinks";
+import ThemeToggle from "../themeToggle/ThemeToggle";
 
 const Navbar = () => {
     return (
@@ -17,21 +17,22 @@ const Navbar = () => {
                 />
                 <Image
                     src="/instagram.png"
-                    alt="instagram"
+                    alt="linkedin"
                     width={24}
                     height={24}
                 />
                 <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
                 <Image
                     src="/youtube.png"
-                    alt="youtube"
+                    alt="portfolio"
                     width={24}
                     height={24}
+                    style={{ borderRadius: "50%" }}
                 />
             </div>
             <div className={styles.logo}>mellis.thedev</div>
             <div className={styles.links}>
-                {/* <ThemeToggle /> */}
+                <ThemeToggle />
                 <Link href="/" className={styles.link}>
                     Homepage
                 </Link>
@@ -41,7 +42,7 @@ const Navbar = () => {
                 <Link href="/" className={styles.link}>
                     About
                 </Link>
-                {/* <AuthLinks /> */}
+                <AuthLinks />
             </div>
         </div>
     );

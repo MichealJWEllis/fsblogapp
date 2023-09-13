@@ -15,6 +15,7 @@ const Featured = () => {
                         alt=""
                         fill
                         className={styles.image}
+                        style={{ borderRadius: "5%" }}
                     />
                 </div>
                 <div className={styles.textContainer}>

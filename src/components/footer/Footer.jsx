@@ -27,7 +27,13 @@ const Footer = () => {
                     <Image src="/facebook.png" alt="" width={18} height={18} />
                     <Image src="/instagram.png" alt="" width={18} height={18} />
                     <Image src="/tiktok.png" alt="" width={18} height={18} />
-                    <Image src="/youtube.png" alt="" width={18} height={18} />
+                    <Image
+                        src="/youtube.png"
+                        alt=""
+                        width={18}
+                        height={18}
+                        style={{ borderRadius: "50%" }}
+                    />
                 </div>
             </div>
             <div className={styles.links}>
@@ -47,10 +53,26 @@ const Footer = () => {
                 </div>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>Social</span>
-                    <Link href="/">Facebook</Link>
-                    <Link href="/">Instagram</Link>
-                    <Link href="/">Tiktok</Link>
-                    <Link href="/">Youtube</Link>
+                    <Link href="/" target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </Link>
+                    <Link href="/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </Link>
+                    <Link
+                        href="https://github.com/MichealJWEllis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Github
+                    </Link>
+                    <Link
+                        href="https://michealjwellis.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Portfolio
+                    </Link>
                 </div>
             </div>
         </div>
